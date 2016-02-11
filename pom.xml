@@ -66,12 +66,6 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-      <dependency>
-        <groupId>be.voo.esb.unification</groupId>
-        <artifactId>features</artifactId>
-        <version>${unification.version}</version>
-        <scope>test</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <build>
