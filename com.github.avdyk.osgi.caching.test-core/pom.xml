@@ -91,7 +91,6 @@
                 <configuration>
                     <instructions>
                         <Import-Package>
-                            be.voo.esb.api.util.auditlog,
                             *
                         </Import-Package>
                         <Export-Package/>
