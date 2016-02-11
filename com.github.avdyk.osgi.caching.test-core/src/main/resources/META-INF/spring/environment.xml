@@ -12,4 +12,9 @@
         interface="com.github.avdyk.osgi.caching.test.api.DevelopperService"
         ref="com.github.avdyk.osgi.caching.testService"/>
 
+    <osgi:reference
+        id="hazelcastInstance"
+        interface="com.hazelcast.core.HazelcastInstance"
+    />
+
 </beans>
