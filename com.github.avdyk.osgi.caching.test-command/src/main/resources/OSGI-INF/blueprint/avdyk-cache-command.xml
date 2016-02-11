@@ -1,0 +1,17 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <reference
+        id="service"
+        interface="com.github.avdyk.osgi.caching.test.api.DevelopperService"/>
+
+    <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
+        <command name="avdyk/cache">
+            <action
+                class="com.github.avdyk.osgi.caching.test.command.DevelopperCommand">
+                <argument index="0" ref="service"
+                          type="com.github.avdyk.osgi.caching.test.api.DevelopperService"/>
+            </action>
+        </command>
+    </command-bundle>
+
+</blueprint>
