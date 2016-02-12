@@ -8,8 +8,16 @@ There are two examples of the cache implementation:
 * [hazelcast-spring](https://github.com/avdyk/osgi-caching-test/tree/hazelcast-spring)
 * [javax.cache](https://github.com/avdyk/osgi-caching-test/tree/javax.cache)
 
-# master
+# hazelcast-spring
 
-Master contains the api, the service, the command and the feature. The
-command has no cache implemented. It's just a starting point for the
-example.
+Possibile configuration of hazelcast with a cache called _avdyk_:
+
+```
+    <map name="avdyk">
+        <backup-count>0</backup-count>
+        <async-backup-count>0</async-backup-count>
+        <time-to-live-seconds>5</time-to-live-seconds>
+        <max-idle-seconds>0</max-idle-seconds>
+    </map>
+
+```
