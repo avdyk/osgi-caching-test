@@ -2,14 +2,14 @@
 
     <reference
         id="service"
-        interface="com.github.avdyk.osgi.caching.test.api.DevelopperService"/>
+        interface="com.github.avdyk.osgi.caching.test.api.DeveloperService"/>
 
     <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
         <command name="avdyk/cache">
             <action
-                class="com.github.avdyk.osgi.caching.test.command.DevelopperCommand">
+                class="com.github.avdyk.osgi.caching.test.command.DeveloperCommand">
                 <argument index="0" ref="service"
-                          type="com.github.avdyk.osgi.caching.test.api.DevelopperService"/>
+                          type="com.github.avdyk.osgi.caching.test.api.DeveloperService"/>
             </action>
         </command>
     </command-bundle>
