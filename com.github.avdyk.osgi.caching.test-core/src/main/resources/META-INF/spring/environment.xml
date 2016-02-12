@@ -8,8 +8,8 @@
         http://www.springframework.org/schema/osgi/spring-osgi.xsd">
 
     <osgi:service
-        id="osgiDevelopperService"
-        interface="com.github.avdyk.osgi.caching.test.api.DevelopperService"
+        id="osgiDeveloperService"
+        interface="com.github.avdyk.osgi.caching.test.api.DeveloperService"
         ref="com.github.avdyk.osgi.caching.testService"/>
 
 </beans>

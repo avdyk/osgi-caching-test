@@ -1,6 +1,6 @@
 package com.github.avdyk.osgi.caching.test.core;
 
-import com.github.avdyk.osgi.caching.test.api.DevelopperService;
+import com.github.avdyk.osgi.caching.test.api.DeveloperService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,13 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Named("com.github.avdyk.osgi.caching.testService")
-public class OSGiDevelopperService implements DevelopperService {
+public class OSGiDeveloperService implements DeveloperService {
 
-    private static Logger logger = LoggerFactory.getLogger(OSGiDevelopperService.class);
+    private static Logger logger = LoggerFactory.getLogger(OSGiDeveloperService.class);
 
     @Override
-    public List<String> getDeveloppers(String service) {
-        logger.info("get developper for {}", service);
+    public List<String> getDevelopers(String service) {
+        logger.info("get developer for {}", service);
         return getDevs(service);
     }
 
