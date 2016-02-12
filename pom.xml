@@ -6,7 +6,7 @@
     <groupId>com.github.avdyk.osgi.caching.test</groupId>
     <artifactId>com.github.avdyk.osgi.caching.test</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.HAZELCAST_SPRING-SNAPSHOT</version>
     <name>com.github.avdyk.osgi.caching.test</name>
     <properties>
         <parent.name>com.github.avdyk.osgi.caching.test</parent.name>
@@ -21,10 +21,10 @@
         <hazelcast.version>3.4.6</hazelcast.version>
         <cache-api.version>1.0.0</cache-api.version>
         <guava.version>19.0</guava.version>
-        <com.github.avdyk.osgi.caching.test-api.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-api.version>
-        <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
-        <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
-        <com.github.avdyk.osgi.caching.test-command.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-command.version>
+        <com.github.avdyk.osgi.caching.test-api.version>1.0.0.HAZELCAST_SPRING-SNAPSHOT</com.github.avdyk.osgi.caching.test-api.version>
+        <com.github.avdyk.osgi.caching.test-features.version>1.0.0.HAZELCAST_SPRING-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
+        <com.github.avdyk.osgi.caching.test-core.version>1.0.0.HAZELCAST_SPRING-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
+        <com.github.avdyk.osgi.caching.test-command.version>1.0.0.HAZELCAST_SPRING-SNAPSHOT</com.github.avdyk.osgi.caching.test-command.version>
         <spring-core.version>3.2.11.RELEASE</spring-core.version>
         <slf4j-api.version>1.7.15</slf4j-api.version>
         <log4j.version>1.2.17</log4j.version>
