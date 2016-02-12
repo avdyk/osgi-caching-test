@@ -12,7 +12,7 @@ There are two examples of the cache implementation:
 
 Possibile configuration of hazelcast with a cache called _avdyk_:
 
-```
+```xml
     <map name="avdyk">
         <backup-count>0</backup-count>
         <async-backup-count>0</async-backup-count>
