@@ -16,7 +16,7 @@
     <name>${parent.name} :: Command</name>
 
     <properties>
-        <org.apache.karaf.shell.console.version>2.4.4</org.apache.karaf.shell.console.version>
+        <org.apache.karaf.shell.console.version>2.3.11</org.apache.karaf.shell.console.version>
     </properties>
 
     <dependencies>

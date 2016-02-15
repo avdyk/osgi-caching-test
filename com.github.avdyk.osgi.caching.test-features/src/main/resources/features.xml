@@ -2,6 +2,11 @@
     xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
     name="com.github.avdyk.osgi.caching.test">
 
+    <feature name="com.github.avdyk.osgi.caching.test-prerequisites" version="${com.github.avdyk.osgi.caching.test-api.version}">
+        <bundle start-level="50">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_2</bundle>
+        <bundle>mvn:com.google.guava/guava/${guava.version}</bundle>
+    </feature>
+
     <feature name="com.github.avdyk.osgi.caching.test-api" version="${com.github.avdyk.osgi.caching.test-api.version}">
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-api/${com.github.avdyk.osgi.caching.test-api.version}</bundle>
     </feature>
