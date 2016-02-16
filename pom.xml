@@ -25,7 +25,7 @@
         <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
         <com.github.avdyk.osgi.caching.test-command.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-command.version>
-        <spring-core.version>3.2.11.RELEASE</spring-core.version>
+        <spring.version>3.2.11.RELEASE</spring.version>
         <slf4j-api.version>1.7.15</slf4j-api.version>
         <log4j.version>1.2.17</log4j.version>
         <junit.version>4.12</junit.version>
@@ -84,17 +84,22 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>${spring-core.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
-                <version>${spring-core.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
-                <version>${spring-core.version}</version>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -139,7 +144,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
-                <version>${spring-core.version}</version>
+                <version>${spring.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
