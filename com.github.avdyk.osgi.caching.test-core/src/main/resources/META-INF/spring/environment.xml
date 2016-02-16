@@ -2,19 +2,19 @@
     xmlns="http://www.springframework.org/schema/beans"
     xmlns:osgi="http://www.springframework.org/schema/osgi"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/osgi
         http://www.springframework.org/schema/osgi/spring-osgi.xsd">
 
-    <osgi:service
-        id="osgiDevelopperService"
-        interface="com.github.avdyk.osgi.caching.test.api.DevelopperService"
-        ref="com.github.avdyk.osgi.caching.testService"/>
-
     <osgi:reference
         id="hazelcastInstance"
-        interface="com.hazelcast.core.HazelcastInstance"
-    />
+        interface="com.hazelcast.core.HazelcastInstance"/>
+
+    <osgi:service
+        id="osgiDeveloperServiceExposed"
+        ref="osgiDeveloperService"
+        interface="com.github.avdyk.osgi.caching.test.api.DeveloperService"/>
 
 </beans>
