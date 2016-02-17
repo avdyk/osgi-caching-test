@@ -15,8 +15,7 @@
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
         <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
         <maven-bundle-plugin.version>2.5.4</maven-bundle-plugin.version>
-        <build-helper-maven-plugin.version>1.5
-        </build-helper-maven-plugin.version>
+        <build-helper-maven-plugin.version>1.5</build-helper-maven-plugin.version>
         <unification.version>1.1.0</unification.version>
         <hazelcast.version>3.4.6</hazelcast.version>
         <cache-api.version>1.0.0</cache-api.version>
@@ -25,6 +24,7 @@
         <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
 	<com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>
+	<com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>
         <com.github.avdyk.osgi.caching.test-command.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-command.version>
         <spring-core.version>3.2.11.RELEASE</spring-core.version>
         <slf4j-api.version>1.7.15</slf4j-api.version>
@@ -219,6 +219,7 @@
         <module>com.github.avdyk.osgi.caching.test-api</module>
         <module>com.github.avdyk.osgi.caching.test-core</module>
 	<module>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</module>
+	<module>com.github.avdyk.osgi.caching.test-core-jcache-annotations</module>
         <module>com.github.avdyk.osgi.caching.test-command</module>
         <module>com.github.avdyk.osgi.caching.test-features</module>
     </modules>
