@@ -11,6 +11,11 @@
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core/${com.github.avdyk.osgi.caching.test-core.version}</bundle>
     </feature>
 
+    <feature name="com.github.avdyk.osgi.caching.test-hazelcast-spring-annotations" version="${hazelcast-spring-annotations.version}">
+        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+        <bundle>mvn:${project.groupId}/hazelcast-spring-annotations/${hazelcast-spring-annotations.version}</bundle>
+    </feature>
+
     <feature name="com.github.avdyk.osgi.caching.test-core-hazelcast-spring" version="${com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version}">
         <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core-hazelcast-spring/${com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version}</bundle>

@@ -21,6 +21,7 @@
         <cache-api.version>1.0.0</cache-api.version>
         <guava.version>19.0</guava.version>
         <api.version>1.0.0-SNAPSHOT</api.version>
+	<hazelcast-spring-annotations.version>1.0.0-SNAPSHOT</hazelcast-spring-annotations.version>
         <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
 	<com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>
@@ -55,6 +56,11 @@
                 <version>${com.github.avdyk.osgi.caching.test-core.version}
                 </version>
             </dependency>
+	    <dependency>
+	      <groupId>com.github.avdyk.osgi.caching.test</groupId>
+	      <artifactId>hazelcast-spring-annotations</artifactId>
+	      <version>${hazelcast-spring-annotations.version}</version>
+	    </dependency>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
                 <artifactId>com.github.avdyk.osgi.caching.test-command
@@ -95,6 +101,11 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
+                <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
                 <version>${spring-core.version}</version>
             </dependency>
             <dependency>
@@ -218,6 +229,7 @@
     <modules>
         <module>api</module>
         <module>com.github.avdyk.osgi.caching.test-core</module>
+	<module>hazelcast-spring-annotations</module>
 	<module>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</module>
 	<module>com.github.avdyk.osgi.caching.test-core-jcache-annotations</module>
         <module>com.github.avdyk.osgi.caching.test-command</module>
