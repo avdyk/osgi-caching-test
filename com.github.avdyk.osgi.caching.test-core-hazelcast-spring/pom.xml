@@ -8,7 +8,7 @@
     <parent>
         <groupId>com.github.avdyk.osgi.caching.test</groupId>
         <artifactId>com.github.avdyk.osgi.caching.test</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</artifactId>
