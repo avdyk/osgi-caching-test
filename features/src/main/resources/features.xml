@@ -26,13 +26,9 @@
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core-jcache-annotations/${com.github.avdyk.osgi.caching.test-core-jcache-annotations.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-command" version="${com.github.avdyk.osgi.caching.test-command.version}">
-        <feature version="${com.github.avdyk.osgi.caching.test-core.version}">com.github.avdyk.osgi.caching.test-core</feature>
-        <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-command/${com.github.avdyk.osgi.caching.test-command.version}</bundle>
-    </feature>
-
-    <feature name="com.github.avdyk.osgi.caching.test-all" version="${project.version}">
-        <feature version="${com.github.avdyk.osgi.caching.test-command.version}">com.github.avdyk.osgi.caching.test-command</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-command" version="${command.version}">
+        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+        <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-command/${command.version}</bundle>
     </feature>
 
 </features>
