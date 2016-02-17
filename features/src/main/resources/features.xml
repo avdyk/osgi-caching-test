@@ -6,9 +6,9 @@
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-api/${api.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-core" version="${com.github.avdyk.osgi.caching.test-core.version}">
+    <feature name="com.github.avdyk.osgi.caching.test-core" version="${core.version}">
         <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
-        <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core/${com.github.avdyk.osgi.caching.test-core.version}</bundle>
+        <bundle>mvn:${project.groupId}/core/${core.version}</bundle>
     </feature>
 
     <feature name="com.github.avdyk.osgi.caching.test-hazelcast-spring-annotations" version="${hazelcast-spring-annotations.version}">

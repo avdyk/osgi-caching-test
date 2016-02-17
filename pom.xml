@@ -23,7 +23,7 @@
         <api.version>1.0.0-SNAPSHOT</api.version>
 	<hazelcast-spring-annotations.version>1.0.0-SNAPSHOT</hazelcast-spring-annotations.version>
         <features.version>1.0.0-SNAPSHOT</features.version>
-        <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
+        <core.version>1.0.0-SNAPSHOT</core.version>
 	<hazelcast-spring.version>1.0.0-SNAPSHOT</hazelcast-spring.version>
 	<jcache-annotations.version>1.0.0-SNAPSHOT</jcache-annotations.version>
         <command.version>1.0.0-SNAPSHOT</command.version>
@@ -48,14 +48,24 @@
             </dependency>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
-                <artifactId>com.github.avdyk.osgi.caching.test-core</artifactId>
-                <version>${com.github.avdyk.osgi.caching.test-core.version}
+                <artifactId>core</artifactId>
+                <version>${core.version}
                 </version>
             </dependency>
 	    <dependency>
 	      <groupId>com.github.avdyk.osgi.caching.test</groupId>
 	      <artifactId>hazelcast-spring-annotations</artifactId>
 	      <version>${hazelcast-spring-annotations.version}</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>com.github.avdyk.osgi.caching.test</groupId>
+	      <artifactId>hazelcast-spring</artifactId>
+	      <version>${hazelcast-spring.version}</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>com.github.avdyk.osgi.caching.test</groupId>
+	      <artifactId>jcache-annotations</artifactId>
+	      <version>${jcache-annotations.version}</version>
 	    </dependency>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
@@ -222,7 +232,7 @@
     </scm>
     <modules>
         <module>api</module>
-        <module>com.github.avdyk.osgi.caching.test-core</module>
+        <module>core</module>
 	<module>hazelcast-spring-annotations</module>
 	<module>hazelcast-spring</module>
 	<module>jcache-annotations</module>
