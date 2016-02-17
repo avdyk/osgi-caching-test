@@ -22,7 +22,7 @@
         <guava.version>19.0</guava.version>
         <api.version>1.0.0-SNAPSHOT</api.version>
 	<hazelcast-spring-annotations.version>1.0.0-SNAPSHOT</hazelcast-spring-annotations.version>
-        <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
+        <features.version>1.0.0-SNAPSHOT</features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
 	<com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>
 	<com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>
@@ -39,16 +39,12 @@
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
                 <artifactId>api</artifactId>
-                <version>${api.version}
-                </version>
+                <version>${api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
-                <artifactId>com.github.avdyk.osgi.caching.test-features
-                </artifactId>
-                <version>
-                    ${com.github.avdyk.osgi.caching.test-features.version}
-                </version>
+                <artifactId>features</artifactId>
+                <version>${features.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
@@ -233,6 +229,6 @@
 	<module>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</module>
 	<module>com.github.avdyk.osgi.caching.test-core-jcache-annotations</module>
         <module>com.github.avdyk.osgi.caching.test-command</module>
-        <module>com.github.avdyk.osgi.caching.test-features</module>
+        <module>features</module>
     </modules>
 </project>
