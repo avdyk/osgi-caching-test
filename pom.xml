@@ -24,6 +24,7 @@
         <com.github.avdyk.osgi.caching.test-api.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-api.version>
         <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
+	<com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>
         <com.github.avdyk.osgi.caching.test-command.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-command.version>
         <spring-core.version>3.2.11.RELEASE</spring-core.version>
         <slf4j-api.version>1.7.15</slf4j-api.version>
@@ -217,6 +218,7 @@
     <modules>
         <module>com.github.avdyk.osgi.caching.test-api</module>
         <module>com.github.avdyk.osgi.caching.test-core</module>
+	<module>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</module>
         <module>com.github.avdyk.osgi.caching.test-command</module>
         <module>com.github.avdyk.osgi.caching.test-features</module>
     </modules>
