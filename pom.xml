@@ -20,7 +20,7 @@
         <hazelcast.version>3.4.6</hazelcast.version>
         <cache-api.version>1.0.0</cache-api.version>
         <guava.version>19.0</guava.version>
-        <com.github.avdyk.osgi.caching.test-api.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-api.version>
+        <api.version>1.0.0-SNAPSHOT</api.version>
         <com.github.avdyk.osgi.caching.test-features.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
 	<com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version>
@@ -37,8 +37,8 @@
         <dependencies>
             <dependency>
                 <groupId>com.github.avdyk.osgi.caching.test</groupId>
-                <artifactId>com.github.avdyk.osgi.caching.test-api</artifactId>
-                <version>${com.github.avdyk.osgi.caching.test-api.version}
+                <artifactId>api</artifactId>
+                <version>${api.version}
                 </version>
             </dependency>
             <dependency>
@@ -216,7 +216,7 @@
         </developerConnection>
     </scm>
     <modules>
-        <module>com.github.avdyk.osgi.caching.test-api</module>
+        <module>api</module>
         <module>com.github.avdyk.osgi.caching.test-core</module>
 	<module>com.github.avdyk.osgi.caching.test-core-hazelcast-spring</module>
 	<module>com.github.avdyk.osgi.caching.test-core-jcache-annotations</module>

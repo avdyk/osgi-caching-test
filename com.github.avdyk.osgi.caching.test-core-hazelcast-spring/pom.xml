@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.github.avdyk.osgi.caching.test</groupId>
-            <artifactId>com.github.avdyk.osgi.caching.test-api</artifactId>
+            <artifactId>api</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.cache</groupId>

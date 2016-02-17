@@ -2,22 +2,22 @@
     xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
     name="com.github.avdyk.osgi.caching.test">
 
-    <feature name="com.github.avdyk.osgi.caching.test-api" version="${com.github.avdyk.osgi.caching.test-api.version}">
-        <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-api/${com.github.avdyk.osgi.caching.test-api.version}</bundle>
+    <feature name="com.github.avdyk.osgi.caching.test-api" version="${api.version}">
+        <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-api/${api.version}</bundle>
     </feature>
 
     <feature name="com.github.avdyk.osgi.caching.test-core" version="${com.github.avdyk.osgi.caching.test-core.version}">
-        <feature version="${com.github.avdyk.osgi.caching.test-api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core/${com.github.avdyk.osgi.caching.test-core.version}</bundle>
     </feature>
 
     <feature name="com.github.avdyk.osgi.caching.test-core-hazelcast-spring" version="${com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version}">
-        <feature version="${com.github.avdyk.osgi.caching.test-api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core-hazelcast-spring/${com.github.avdyk.osgi.caching.test-core-hazelcast-spring.version}</bundle>
     </feature>
 
     <feature name="com.github.avdyk.osgi.caching.test-core-jcache-annotations" version="${com.github.avdyk.osgi.caching.test-core-jcache-annotations.version}">
-        <feature version="${com.github.avdyk.osgi.caching.test-api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-core-jcache-annotations/${com.github.avdyk.osgi.caching.test-core-jcache-annotations.version}</bundle>
     </feature>
 
