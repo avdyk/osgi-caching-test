@@ -11,7 +11,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>com.github.avdyk.osgi.caching.test-core-jcache-annotations</artifactId>
+    <artifactId>jcache-annotations</artifactId>
     <packaging>bundle</packaging>
     <name>${parent.name} :: Core JCache Annotations</name>
 

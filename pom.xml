@@ -25,7 +25,7 @@
         <features.version>1.0.0-SNAPSHOT</features.version>
         <com.github.avdyk.osgi.caching.test-core.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core.version>
 	<hazelcast-spring.version>1.0.0-SNAPSHOT</hazelcast-spring.version>
-	<com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>1.0.0-SNAPSHOT</com.github.avdyk.osgi.caching.test-core-jcache-annotations.version>
+	<jcache-annotations.version>1.0.0-SNAPSHOT</jcache-annotations.version>
         <command.version>1.0.0-SNAPSHOT</command.version>
         <spring-core.version>3.2.11.RELEASE</spring-core.version>
         <slf4j-api.version>1.7.15</slf4j-api.version>
@@ -225,7 +225,7 @@
         <module>com.github.avdyk.osgi.caching.test-core</module>
 	<module>hazelcast-spring-annotations</module>
 	<module>hazelcast-spring</module>
-	<module>com.github.avdyk.osgi.caching.test-core-jcache-annotations</module>
+	<module>jcache-annotations</module>
         <module>command</module>
         <module>features</module>
     </modules>
