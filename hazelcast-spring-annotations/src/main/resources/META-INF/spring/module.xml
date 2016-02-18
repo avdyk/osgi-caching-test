@@ -17,11 +17,4 @@
     <cache:annotation-driven
         cache-manager="cacheManager"/>
 
-    <bean
-        id="cacheManager"
-        class="com.hazelcast.spring.cache.HazelcastCacheManager">
-
-        <constructor-arg ref="hazelcastInstance"/>
-    </bean>
-
 </beans>

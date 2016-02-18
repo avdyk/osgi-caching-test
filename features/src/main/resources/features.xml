@@ -2,32 +2,41 @@
     xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
     name="com.github.avdyk.osgi.caching.test">
 
-    <feature name="com.github.avdyk.osgi.caching.test-api" version="${api.version}">
+    <feature name="com.github.avdyk.osgi.caching.test-prerequisites" version="${project.version}">
+        <bundle>mvn:com.google.guava/guava/${guava.version}</bundle>
+    </feature>
+
+    <feature name="com.github.avdyk.osgi.caching.test-api" version="${project.version}">
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-api/${api.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-core" version="${core.version}">
-        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-core" version="${project.version}">
+        <feature version="${project.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/core/${core.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-hazelcast-spring-annotations" version="${hazelcast-spring-annotations.version}">
-        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-core-hazelcast-spring-annotations" version="${project.version}">
+        <feature version="${project.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/hazelcast-spring-annotations/${hazelcast-spring-annotations.version}</bundle>
+        <configfile
+            finalname="/deploy/hazelcast-cache-manager.xml"
+            override="false">
+            mvn:${project.groupId}/hazelcast-spring-annotations/${hazelcast-spring-annotations.version}/deploy/cache-manager
+        </configfile>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-core-hazelcast-spring" version="${hazelcast-spring.version}">
-        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-core-hazelcast-spring" version="${project.version}">
+        <feature version="${project.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/hazelcast-spring/${hazelcast-spring.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-core-jcache-annotations" version="${jcache-annotations.version}">
-        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-core-jcache-annotations" version="${project.version}">
+        <feature version="${project.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/jcache-annotations/${jcache-annotations.version}</bundle>
     </feature>
 
-    <feature name="com.github.avdyk.osgi.caching.test-command" version="${command.version}">
-        <feature version="${api.version}">com.github.avdyk.osgi.caching.test-api</feature>
+    <feature name="com.github.avdyk.osgi.caching.test-command" version="${project.version}">
+        <feature version="${project.version}">com.github.avdyk.osgi.caching.test-api</feature>
         <bundle>mvn:${project.groupId}/com.github.avdyk.osgi.caching.test-command/${command.version}</bundle>
     </feature>
 

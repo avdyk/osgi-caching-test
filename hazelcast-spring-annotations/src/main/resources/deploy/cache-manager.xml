@@ -9,12 +9,19 @@
         http://www.springframework.org/schema/osgi/spring-osgi.xsd">
 
     <osgi:reference
+        id="hazelcastInstance"
+        interface="com.hazelcast.core.HazelcastInstance"/>
+
+    <bean
         id="cacheManager"
-        interface="org.springframework.cache.CacheManager"/>
+        class="com.hazelcast.spring.cache.HazelcastCacheManager">
+
+        <constructor-arg ref="hazelcastInstance"/>
+    </bean>
 
     <osgi:service
-        id="osgiDeveloperServiceExposed"
-        ref="osgiDeveloperService"
-        interface="com.github.avdyk.osgi.caching.test.api.DeveloperService"/>
+        id="cacheManageService"
+        ref="cacheManager"
+        interface="org.springframework.cache.CacheManager"/>
 
 </beans>
